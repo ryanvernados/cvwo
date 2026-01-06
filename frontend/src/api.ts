@@ -15,3 +15,12 @@ export const authAPI = {
     }
 };
 
+export const topicAPI = {
+    getAll: function() {
+        return api.get('/topics');
+    },
+    getById: function(id: number) {
+        return api.get(`/topics/${id}`);
+    }
+}
+
